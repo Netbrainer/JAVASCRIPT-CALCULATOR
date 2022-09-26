@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+:root{
+    
+    --main-background:hsl(225, 21%, 49%);
+    --output-background:hsl(224, 36%, 15%);
+    --special-buttons-text-color:white;
+    --special-btn-color:hsl(225, 21%, 49%);
+    --special-btn-shadow:hsl(224, 28%, 35%);
+    --keypad-background:hsl(223, 31%, 20%);
+    --toggle-background:hsl(223, 31%, 20%);
+    --toggle-color:hsl(6, 63%, 50%);
+    --toggle-shadow: hsl(6, 70%, 34%);
+    --buttons-color:hsl(221, 14%, 31%) ;
+    --buttons-shadow:hsl(224, 28%, 35%);
+    --equals-key-background: hsl(6, 63%, 50%);
+   
+    --normal-buttons-background:hsl(30, 25%, 89%);
+    --normal-buttons-background-shadow:hsl(28, 16%, 65%);
+    --output-text-color:white;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{ background:var(--main-background);font-family: 'League Spartan', sans-serif;font-weight: 700;}
+
+
+.top-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:300px;
+    margin-top: 30px;
+  
+}
+
+
+
+.bg_par{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent{
+
+    
+    height: 100vh;
+
+
+ 
+}
+.display_cont{
+    width:90%;
+    height: 60px;
+
+    border-radius: 4px;
+    background:   var(--output-background);
+    margin-bottom:20px;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    
+
+
+}
+.buttons{
+    width:90%;
+    height:50vh;
+
+    border-radius: 6px;
+    background:var(--keypad-background);
+    
+
+    
+}
+.operations_nums{
+    display:grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-gap:15px;
+    align-content: center;
+    padding:20px;
+    margin-right: 25px;
+
+}
+
+.operations_nums button{
+    padding:10px;
+    border-radius:5px;
+    background:var(--normal-buttons-background);
+    width:60px;
+    text-align: center;
+    box-shadow:  2px 2px 2px var(--buttons-shadow);
+    border:none;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size:20px;
+    cursor: pointer;
+    color:var(--buttons-color);
+
+}
+.operations_nums .del{
+    background: var(--special-btn-color);
+    box-shadow:2px 2px 2px var(--special-btn-shadow);
+    color:var(--special-buttons-text-color);
+}
+
+.operations_nums .eq{
+    background: var(--equals-key-background);
+    color:var(--special-buttons-text-color);
+    box-shadow: 2px 2px 2px var(--equals-key-shadow);
+
+}
+
+.operations_nums .btne{
+    position: relative;
+    left:125%;
+    width: 140px;
+}
+.operations_nums .btnr{
+    
+    width: 140px;
+}
+.display_content{
+    color:var(--output-text-color);
+    margin-right: 10px;
+
+}
+input{
+    height:25px;
+    width: 25px;
+    appearance: none;
+    background-color: var(--toggle-color);
+    border-radius: 50%;
+    opacity: 0;
+}
+input:hover{
+    cursor: pointer;
+}
+.tri-stage-toggle{
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    border-radius: 50px;
+    background: var(--toggle-background);
+    margin-left: 230px;
+  
+    
+}
+
+#one{
+    opacity: 1;
+}
+.textDIV{
+    display: flex;
+    word-spacing: 30px;
+    position: absolute;
+    left:55%;
+    top:1.5%;
+    align-items:center;
+}
+@media all and (max-width:700px){
+    .buttons{
+        width: 100%;
+        
+    }
+    .display_cont{
+        width: 100%;
+    }
+    .textDIV{
+        display: flex;
+        word-spacing: 30px;
+        position: absolute;
+        left:63%;
+        top:1.5%;
+        align-items:center;
+    }
+}

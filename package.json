@@ -1,0 +1,15 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "a simple calculator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Mburu",
+  "license": "MIT",
+  "dependencies": {
+    "mathjs": "^11.2.1",
+    "requirejs": "^2.3.6"
+  }
+}
