@@ -1,7 +1,6 @@
 
 const output = document.getElementById("output")
 const btn  = document.querySelectorAll(".btn")
-const VAL_VALS = ["DEL","=","RESET"]
 const ERROR_MESSAGE = "SYNTAX ERROR";
 function populateButtonObject(){
     const buttonMap = {}
