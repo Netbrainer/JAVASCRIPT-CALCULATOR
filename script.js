@@ -37,7 +37,9 @@ function parse(dataString){
 const newObject = filterValues(btnObject);
 
 function outputToDisplay(obj){
-
+if(output==ERROR_MESSAGE){
+    output.textContent=""
+}
 
     btn.forEach(bn => {
         bn.addEventListener("click",() => {
